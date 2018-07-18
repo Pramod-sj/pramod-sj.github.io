@@ -43,7 +43,7 @@ hr.star-light {
 
 hr.star-light:after {
   color: #fff;
-  background-color: #E45980;
+  background-color: #D25187;
 }
 
 
@@ -55,17 +55,6 @@ hr.star-dark:after {
   color: #2C3E50;
   background-color: white;
 }
-
-hr.star-light-2 {
-  border-color: #fff;
-}
-
-hr.star-light-2:after {
-  color: #fff;
-  background-color: #C34D8A;
-}
-
-
 section {
   padding: 6rem 0;
 }
@@ -164,11 +153,11 @@ section h2 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-	background: linear-gradient(#B24592,#F15F79);
+	background: linear-gradient(90deg,#B24592,#F15F79);
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: linear-gradient(#B24592,#F15F79);
+    background: linear-gradient(90deg,#B24592,#F15F79);
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
@@ -358,7 +347,7 @@ a:focus, a:hover, a:active {
 }
 
 .bg-primary {
-  background: linear-gradient(#B24592,#F15F79) !important;
+  background: linear-gradient(90deg,#B24592,#F15F79) !important;
 }
 
 .bg-secondary {
@@ -374,21 +363,91 @@ a:focus, a:hover, a:active {
 }
 
 .btn-primary {
-  background-color: #18BC9C;
-  border-color: #18BC9C;
+  background: linear-gradient(90deg,#B24592,#F15F79)
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #128f76;
-  border-color: #128f76;
+  background: linear-gradient(90deg,#B24592,#F15F79);
 }
 
 .btn-secondary {
-  background-color: #2C3E50;
-  border-color: #2C3E50;
+  background: linear-gradient(90deg,#B24592,#F15F79)
 }
 
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  background-color: #1a252f;
-  border-color: #1a252f;
+  background: linear-gradient(90deg,#B24592,#F15F79)
+
+}
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
 }
